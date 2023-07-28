@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRIS CLASSIFICATION MODEL</title>
+</head>
+<body background='https://st.depositphotos.com/1307373/2508/i/950/depositphotos_25087857-stock-photo-purple-iris-flower-with-butterfly.jpg'
+style="background-repeat: no-repeat;background-size: 100%">
+
+    <h1>IRIS CLASSIFICATION MODEL</h1>
+
+    <form action="/species_prediction",method = "GET">
+        <label>SepalLengthCm: </label><input type="number" step="any" name="SepalLengthCm"><br><br>
+        <label>SepalWidthCm: </label><input type="number" step ="any" name="SepalWidthCm"><br><br>
+        <label>PetalLengthCm: </label><input type="number" step= "any" name="PetalLengthCm"><br><br>
+        <label>PetalWidthCm: </label><input type="number" step="any" name="PetalWidthCm"><br><br>
+        
+
+
+
+        <input type="submit" value="PREDICT">
+
+        <h3>{{Predicted_Flower_Species}}</h3>
+        <h4>
+        <a href="https://en.wikipedia.org/wiki/Iris_(plant)">T0 know more click here</a>
+        </h4>
+
+
+
+    </form>
+</body>
+</html>
